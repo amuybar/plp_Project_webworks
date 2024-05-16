@@ -1,0 +1,39 @@
+/* Newsletter section styles */
+.newsletter-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.newsletter-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.newsletter-section input[type="email"] {
+  width: 80%;
+  max-width:800px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px;
+}
+
+.newsletter-section input[type="email"]:focus {
+  outline: none;
+  border-color: #007bff; /* Blue border color */
+}
+
+.newsletter-section button {
+  background-color: #007bff; /* Blue button background */
+  color: #fff; /* White button text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.newsletter-section button:hover {
+  background-color: #0056b3; /* Dark blue hover background */
+}

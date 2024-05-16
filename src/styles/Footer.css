@@ -1,0 +1,43 @@
+/* Footer styles */
+.footer {
+  background-color: #333; /* Dark gray background */
+  color: #fff; /* White text color */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  color: #fff; /* White link color */
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #007bff; /* Blue hover color */
+}
+
+.socials {
+  margin-bottom: 20px;
+}
+
+.social-link {
+  color: #fff; /* White link color */
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #007bff; /* Blue hover color */
+}
+
+.footer-text {
+  font-size: 0.9rem;
+}

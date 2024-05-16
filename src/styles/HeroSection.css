@@ -1,0 +1,65 @@
+/* Hero section styles */
+.hero {
+  background-image: url('hero-background.jpg'); /* Replace 'hero-background.jpg' with your actual image */
+  background-size: cover;
+  background-position: center;
+  color: #000000;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.get-started-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .get-started-button {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+}
