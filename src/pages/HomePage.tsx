@@ -1,5 +1,4 @@
-import React from 'react';
-import NavBar from '../components/NavBar';
+
 import HeroSection from '../components/HeroSection';
 import ServicesSection from '../components/ServicesSection';
 import AboutSection from '../components/AboutSection';
@@ -9,12 +8,11 @@ import MssVsnSection from '../components/MssVsnSection';
 import ContactSection from '../components/ContactSection';
 import OurPartnersSection from '../components/OurPartnersSection';
 import BlogSection from '../components/BlogSection';
-import FooterSection from '../components/FooterSection';
 
 const HomePage = () => {
     return (
         <div>
-            <NavBar />
+            
             <HeroSection />
             <AboutSection />
             <ServicesSection />
@@ -24,9 +22,7 @@ const HomePage = () => {
             <BlogSection />
             <ContactSection />
             <NewsLetterSection />
-            <FooterSection />
-            
-            
+           
         </div>
     );
 }

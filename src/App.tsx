@@ -1,19 +1,21 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-// import AboutPage from './pages/AboutPage';
-// import ContactPage from './pages/ContactPage';
 import './App.css';
+import Services from './pages/Services';
+import FooterSection from './components/FooterSection';
+import NavBar from './components/NavBar';
 
 const App = () => {
     return (
         <BrowserRouter>
+        <NavBar />
             <Routes>
                 <Route path="/"  element={<HomePage/>} />
-                {/* <Route path="/about" component={AboutPage} />
-                <Route path="/contact" component={ContactPage} /> */}
+                <Route path='/services' element={<Services/>}/>
             </Routes>
-        </BrowserRouter>
+            <FooterSection />
+          </BrowserRouter>
     );
 }
 
