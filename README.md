@@ -1,13 +1,49 @@
-## Running React on Replit
 
-[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
+# Webwork Labs Solutions
 
-[Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
+## Description
 
-Using the two in conjunction is one of the fastest ways to build a web app.
+A website for  a proposed business idea, Webworks aspire to deliver web services like development,desing, hosting amoung many more
 
-### Getting Started
-- Hit run
-- Edit [App.tsx](#src/App.tsx) and watch it live update!
+## Technologies Used
 
-By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the [configuration file](#.replit). Here are the vite docs for [serving production websites](https://vitejs.dev/guide/build.html)# plp_Project_webworks
+
+
+- React
+- CSS
+- Typescript
+
+
+## Setup and Installation
+
+1. Cloning the repository
+- git clone https://github.com/amuybar/plp_Project_webworks.git
+2. Installing dependencies
+- npm install
+3. Running the project locally
+- npm run dev
+
+## Usage
+
+- User can sign up or just take allok at our services then contact us
+
+- Sign for news letter
+
+## Contributing
+
+- report bugs
+
+- suggest enhancements
+
+- submit pull requests
+
+## License
+
+-MIT
+
+## Contact Information
+
+
+- Barrack Amuyunzu
+- odaribq@gmail.com
+- [Your LinkedIn profile](https://www.linkedin.com/in/barrack-amuyunzu-7414142b9/)
