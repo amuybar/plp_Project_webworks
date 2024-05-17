@@ -105,36 +105,43 @@
   width: 60%;
   margin-bottom: 10px;
 }
-.blueprint-card{
-  width:100%;
-  margin: 20px;
+.blueprint-card {
   display: flex;
-  flex-direction: row;
-  background-color:transparent;
-  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+ 
 }
-.blueprint-card .content{
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-}
-.blueprint-card .content h2{
-  font-size: 34px;
-  color: #000000;
-  margin-bottom: 10px;
-  
 
+.blueprint-card .image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
 }
-.blueprint-card .content p{
-  font-size: 23px;
-  color: #666;
-  line-height: 1.5;
-}
-.blueprint-card .image img{
-  width: 390px;
+
+.blueprint-card .image img {
+  max-width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  border-radius: 8px;
 }
+
+.blueprint-card .content {
+  flex: 2;
+  text-align: left;
+}
+
+.blueprint-card .content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.blueprint-card .content p {
+  font-size: 1rem;
+  color: #666;
+}
+
 .demo-btn{
   background-color: #2986eb;
   color: #fff;
@@ -143,6 +150,42 @@
   font-size: 1.2rem;
   cursor: pointer;
 }
+.chat-invitation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.chat-invitation h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.chat-invitation p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.chat-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chat-button:hover {
+  background-color: #0056b3;
+}
+
 
 @media screen and (max-width: 780px) {
 

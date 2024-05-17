@@ -16,51 +16,42 @@ const Navbar = () => {
                 <Link to="/">
                     <img src="/images/Webworks labs.png" alt="Logo" className="logo" />
                 </Link>
-                
             </div>
             <div className={`navbar-links ${menuOpen ? "active" : ""}`}>
-                 {/* Logo on small screens */}
-                 <Link to="/">
+                <Link to="/">
                     <img src="/images/Webworks labs.png" alt="Logo" className="logo-mobile" />
                 </Link>
-                {/* search input with an icon for serch */}
-                
                 <div className="search">
-                <input type="text" placeholder="Search" className="search-input" />
-                    <i className='search-icon'><FaSearch /></i>
+                    <input type="text" placeholder="Search" className="search-input" />
+                    <i className="search-icon"><FaSearch /></i>
                 </div>
-                {/* links */}
-                <Link to="/" className="nav-link" onClick={handleMenuToggle}>Home</Link>
-              <li>
-                <Link to='#' className="nav-link" >Services</Link>
-                <ul className='sub-list'>
-                <Link to="/services" className="services-list" onClick={handleMenuToggle}>Web Development</Link>
-                <Link to="/services" className="services-list" onClick={handleMenuToggle}>App Development</Link>
-                <Link to="/services" className="services-list" onClick={handleMenuToggle}>Web Development</Link>
-                <Link to="/services" className="services-list" onClick={handleMenuToggle}>Web Hosting</Link>
-                <Link to="/services" className="services-list" onClick={handleMenuToggle}>Digital Marketing</Link>
-                <Link to="/services" className="services-list" onClick={handleMenuToggle}>Cloud Computing</Link>
-                </ul>
-                </li>
-                <Link to="/career" className="nav-link" onClick={handleMenuToggle}>Careers</Link>
-               <li>
-                <Link to="#" className="nav-link" >Products</Link>
-                <ul className='sub-list'>
-                    <Link to="/products" className="products-list" onClick={handleMenuToggle}>Web Development</Link>
-                    <Link to="/products" className="products-list" onClick={handleMenuToggle}>App Development</Link>
-                    <Link to="/products" className="products-list" onClick={handleMenuToggle}>Web Development</Link>
-                    <Link to="/products" className="products-list" onClick={handleMenuToggle}>Web Hosting</Link>
-                    <Link to="/products" className="products-list" onClick={handleMenuToggle}>Digital Marketing</Link>
-                    <Link to="/products" className="products-list" onClick={handleMenuToggle}>Cloud Computing</Link>
-                </ul>
-
-                </li>
-                <Link to="/login" className="nav-link" onClick={handleMenuToggle}>Login</Link>
-                <Link to="/register" className="nav-link" onClick={handleMenuToggle}>Register</Link>
+                <Link to="/" className="nav-link" onClick={()=>setMenuOpen(false)}>Home</Link>
+                <div className="dropdown" >
+                    <Link to="#" className="nav-link">Services</Link>
+                    <div className="dropdown-content">
+                        <Link to="/services#web-development" className="dropdown-link" onClick={()=>setMenuOpen(false)}>Web Development</Link>
+                        <Link to="/services#app-development" className="dropdown-link" onClick={()=>setMenuOpen(false)}>App Development</Link>
+                        <Link to="/services#web-hosting" className="dropdown-link" >Web Hosting</Link>
+                        <Link to="/services#digital-marketing" className="dropdown-link" onClick={()=>setMenuOpen(false)}>Digital Marketing</Link>
+                        <Link to="/services#cloud-computing" className="dropdown-link" onClick={()=>setMenuOpen(false)}>Cloud Computing</Link>
+                    </div>
+                </div>
+                <Link to="/career" className="nav-link" onClick={()=>setMenuOpen(false)}>Careers</Link>
+                <div className="dropdown" >
+                    <Link to="#" className="nav-link">Products</Link>
+                    <div className="dropdown-content">
+                        <Link to="/products#web-development" className="dropdown-link" onClick={()=>setMenuOpen(false)}>Web Development</Link>
+                        <Link to="/products#app-development" className="dropdown-link" onClick={()=>setMenuOpen(false)}>App Development</Link>
+                        <Link to="/products#web-hosting" className="dropdown-link" >Web Hosting</Link>
+                        <Link to="/products#digital-marketing" className="dropdown-link" onClick={()=>setMenuOpen(false)}>Digital Marketing</Link>
+                        <Link to="/products#cloud-computing" className="dropdown-link" onClick={()=>setMenuOpen(false)}>Cloud Computing</Link>
+                    </div>
+                </div>
+                <Link to="/login" className="nav-link" >Login</Link>
+                <Link to="/register" className="nav-link" >Register</Link>
             </div>
-           {/* toogle menu */}
-            <div className="menu-icon" onClick={handleMenuToggle}>
-                {menuOpen? <FaTimes /> : <FaBars />}
+            <div className="menu-icon"  onClick={handleMenuToggle}>
+                {menuOpen ? <FaTimes /> : <FaBars />}
             </div>
         </nav>
     );

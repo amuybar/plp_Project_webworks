@@ -1,6 +1,6 @@
 /* Hero section styles */
 .hero {
-  background-image: url('hero-background.jpg'); /* Replace 'hero-background.jpg' with your actual image */
+  background-image: url('/public/images/lpr.avif'); 
   background-size: cover;
   background-position: center;
   color: #000000;
@@ -11,11 +11,14 @@
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
+  background-color:rgb(206, 203, 203,0.7);
+  padding: 30px;
 }
 
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+
 }
 
 .hero p {

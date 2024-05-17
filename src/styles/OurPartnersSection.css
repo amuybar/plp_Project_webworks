@@ -1,25 +1,58 @@
-/* Partner section styles */
-.partners-section {
-  padding: 80px 0;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+/* OurPartnersSection.css */
 
-.partner-card {
-  width: calc(33.33% - 20px);
-  padding: 20px;
-  margin-bottom: 40px;
+.section {
+  padding: 50px 20px;
+  background-color: #ffffff;
   text-align: center;
 }
 
-.partner-card img {
-  width: 100px; /* Adjust the width of partner logos */
-  height: auto;
+.title {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.partner-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.partner-card:hover {
+  transform: scale(1.05);
+}
+
+.partner-card:hover .logo {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
   margin-bottom: 10px;
 }
 
-.partner-card p {
-  font-size: 1rem;
+.partner-name {
+  font-size: 1.2em;
   color: #666;
+  margin: 0;
 }

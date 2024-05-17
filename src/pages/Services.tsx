@@ -94,7 +94,13 @@ function Services() {
           </div>
           
         </div>
-     
+        <div className="chat-invitation">
+      <h1>Want to chat about your website project?</h1>
+      <p>
+        Grab some time that's convenient for you to talk through the vision and goals for your website.
+      </p>
+      <button className="chat-button">Let's Talk</button>
+    </div>
     </div>
   );
 }

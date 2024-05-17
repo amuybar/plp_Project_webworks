@@ -1,7 +1,7 @@
-// BlogSection.jsx
+// BlogsPage.jsx
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../styles/BlogSection.css';
+import '../styles/BlogsPage.css';
 
 const blogs = [
   {
@@ -19,23 +19,20 @@ const blogs = [
     title: 'Introduction to Node.js',
     excerpt: 'Node.js is a JavaScript runtime built on Chrome\'s V8 JavaScript engine, designed to build scalable network applications...',
   },
+  // Add more blog entries here
 ];
 
-const BlogSection = () => {
+const BlogsPage = () => {
   const navigate = useNavigate();
-
-  const handleViewAllBlogs = () => {
-    navigate('/blogs');
-  };
 
   const handleBlogClick = (id:number) => {
     navigate(`/blog/${id}`);
   };
 
   return (
-    <section className="blog-section">
-      <h2>Our Latest Blogs</h2>
-      <div className="blog-grid">
+    <div className="blogs-page">
+      <h2>All Blogs</h2>
+      <div className="blog-list">
         {blogs.map((blog) => (
           <div className="blog-card" key={blog.id} onClick={() => handleBlogClick(blog.id)}>
             <h3 className="blog-title">{blog.title}</h3>
@@ -43,9 +40,8 @@ const BlogSection = () => {
           </div>
         ))}
       </div>
-      <button className="view-all-button" onClick={handleViewAllBlogs}>View All Blogs</button>
-    </section>
+    </div>
   );
 };
 
-export default BlogSection;
+export default BlogsPage;

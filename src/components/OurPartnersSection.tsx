@@ -2,23 +2,27 @@ import React from 'react';
 import '../styles/OurPartnersSection.css';
 
 
-const OurPartnersSection = () => {
+const partners = [
+    { name: 'Partner A', logo: 'https://via.placeholder.com/150' },
+    { name: 'Partner B', logo: 'https://via.placeholder.com/150' },
+    { name: 'Partner C', logo: 'https://via.placeholder.com/150' },
+    { name: 'Partner D', logo: 'https://via.placeholder.com/150' },
+  ];
+  
+  const OurPartnersSection = () => {
     return (
-        <div className="partners-section">
-            <div className="partner-card">
-                <img src="partner1.png" alt="Partner 1 Logo" />
-                <p>Partner 1</p>
+      <section className="section">
+        <h2 className="title">Our Valued Partners</h2>
+        <div className="partners-grid">
+          {partners.map((partner, index) => (
+            <div className="partner-card" key={index}>
+              <img className="logo" src={partner.logo} alt={partner.name} />
+              <p className="partner-name">{partner.name}</p>
             </div>
-            <div className="partner-card">
-                <img src="partner2.png" alt="Partner 2 Logo" />
-                <p>Partner 2</p>
-            </div>
-            <div className="partner-card">
-                <img src="partner3.png" alt="Partner 3 Logo" />
-                <p>Partner 3</p>
-            </div>
+          ))}
         </div>
+      </section>
     );
-}
-
-export default OurPartnersSection;
+  };
+  
+  export default OurPartnersSection;
