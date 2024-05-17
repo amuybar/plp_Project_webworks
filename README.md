@@ -46,4 +46,5 @@ A website for  a proposed business idea, Webworks aspire to deliver web services
 
 - Barrack Amuyunzu
 - odaribq@gmail.com
-- [Your LinkedIn profile](https://www.linkedin.com/in/barrack-amuyunzu-7414142b9/)
+- [Portfolio Website](https://amuyunzubarrac.club/)
+- [Barrack LinkedIN](https://www.linkedin.com/in/barrack-amuyunzu-7414142b9/)
